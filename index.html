@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Second Clock · Biological age check</title>
-<meta name="description" content="Answer nine quick questions and see how far your body's age sits from your calendar age, and which habits move it.">
-<meta property="og:title" content="Second Clock · Biological age check">
-<meta property="og:description" content="Nine questions, about a minute. See which habits add years and which take them off.">
+<title>Second Clock · Biological age assessment</title>
+<meta name="description" content="A nine question lifestyle assessment that estimates biological age and identifies the factors contributing to it.">
+<meta property="og:title" content="Second Clock · Biological age assessment">
+<meta property="og:description" content="A brief lifestyle assessment estimating biological age relative to chronological age.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0A0A'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M16 10v6l4 3' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -233,41 +233,41 @@ section{padding:64px 0}.hero{padding:128px 0 32px}.card{padding:24px}.bign{font-
     Second Clock
   </a>
   <div class="links title-4">
-    <a href="#check">Check</a><a href="#how">How it works</a><a href="#faq">FAQ</a>
+    <a href="#check">Assessment</a><a href="#how">Methodology</a><a href="#faq">FAQ</a>
   </div>
-  <a class="btn button-sm" href="#check">Start the check</a>
+  <a class="btn button-sm" href="#check">Begin assessment</a>
   <button class="tog" id="tog" aria-label="Open menu" aria-expanded="false" aria-controls="panel"><span></span><span></span></button>
 </nav>
 <div class="panel heading-5" id="panel" aria-hidden="true">
-  <a href="#check">Start the check</a><a href="#how">How it works</a><a href="#faq">FAQ</a>
+  <a href="#check">Begin assessment</a><a href="#how">Methodology</a><a href="#faq">FAQ</a>
 </div>
 
 <main id="main">
 <section class="hero" id="top"><div class="wrap">
   <div class="rv">
-    <span class="pill caption-3"><b>New</b>Nine questions, about a minute</span>
-    <h1 class="heading-1 grad">Find out how old<br>your body really is</h1>
-    <p class="lead title-2 mut">Answer nine quick questions about sleep, movement, food and stress. See how many years your habits add or take off, and where to start.</p>
+    <span class="pill caption-3"><b>Free</b>Lifestyle assessment · 9 questions · approx. 1 minute</span>
+    <h1 class="heading-1 grad">Estimate your<br>biological age</h1>
+    <p class="lead title-2 mut">A brief questionnaire covering sleep, physical activity, diet, alcohol, tobacco, stress, BMI and resting heart rate. Each response is weighted to estimate your biological age relative to your chronological age.</p>
     <div class="ctas">
-      <a class="btn lg button-md" href="#check">Start the check</a>
-      <a class="btn soft lg button-md" href="#how">See how it works</a>
+      <a class="btn lg button-md" href="#check">Begin assessment</a>
+      <a class="btn soft lg button-md" href="#how">Methodology</a>
     </div>
-    <div class="proof caption-5"><span><i class="ph ph-lock-simple"></i>Nothing leaves your browser</span><span><i class="ph ph-user-circle-dashed"></i>No account needed</span></div>
+    <div class="proof caption-5"><span><i class="ph ph-lock-simple"></i>Processed locally on your device</span><span><i class="ph ph-user-circle-dashed"></i>No registration required</span></div>
   </div>
 </div></section>
 
 <div class="marq" aria-hidden="true"><div class="lane" id="lane1"></div><div class="lane rev" id="lane2"></div></div>
 
 <section class="tagline"><div class="wrap">
-  <h2 class="heading-2" id="tag">Your birthday sets one clock. The way you sleep, move and eat quietly sets the other.</h2>
+  <h2 class="heading-2" id="tag">Chronological age is fixed. Biological age reflects the effect of lifestyle on the body, and much of it is modifiable.</h2>
 </div></section>
 
 <section id="check"><div class="wrap">
-  <div class="shead rv"><h2 class="heading-3">Start the check</h2><p class="body-3 mut">One question at a time. Your result on the right updates with every answer, so you can see what each habit is worth.</p></div>
+  <div class="shead rv"><h2 class="heading-3">Assessment</h2><p class="body-3 mut">Answer each question based on a typical week. Your estimate updates as you respond.</p></div>
   <div class="chips body-6" id="chips" role="tablist" aria-label="Questions"></div>
   <div class="cgrid">
     <div class="device rv"><div class="screen">
-      <div class="top"><button class="icon-btn" id="back" aria-label="Previous question"><i class="ph ph-arrow-left"></i></button><span class="title-4 mut" id="count"></span><button class="icon-btn" id="restart" aria-label="Start over"><i class="ph ph-arrow-counter-clockwise"></i></button></div>
+      <div class="top"><button class="icon-btn" id="back" aria-label="Previous question"><i class="ph ph-arrow-left"></i></button><span class="title-4 mut" id="count"></span><button class="icon-btn" id="restart" aria-label="Clear responses"><i class="ph ph-arrow-counter-clockwise"></i></button></div>
       <div class="prog"><div id="progBar"></div></div>
       <div class="stage" id="stage" aria-live="polite"></div>
     </div></div>
@@ -275,62 +275,62 @@ section{padding:64px 0}.hero{padding:128px 0 32px}.card{padding:24px}.bign{font-
     <div class="dash" id="results">
       <div class="card res rv" aria-live="polite">
         <div class="row1">
-          <div><div class="title-4 mut">Biological age</div><div class="bign mono" id="bioN">00.0</div><div class="badge title-4" id="verdict"></div></div>
-          <div style="text-align:right"><div class="title-4 mut">Calendar age</div><div class="heading-3 mono mut" id="actN">00</div></div>
+          <div><div class="title-4 mut">Estimated biological age</div><div class="bign mono" id="bioN">00.0</div><div class="badge title-4" id="verdict"></div></div>
+          <div style="text-align:right"><div class="title-4 mut">Chronological age</div><div class="heading-3 mono mut" id="actN">00</div></div>
         </div>
         <div class="track" aria-hidden="true"><div class="rail"></div>
-          <div class="mover" id="mAct"><div class="mark m-act"><em class="caption-3">Calendar</em><b></b></div></div>
-          <div class="mover" id="mBio"><div class="mark m-bio" id="bioMark"><b></b><em class="caption-3">Body</em></div></div>
+          <div class="mover" id="mAct"><div class="mark m-act"><em class="caption-3">Chronological</em><b></b></div></div>
+          <div class="mover" id="mBio"><div class="mark m-bio" id="bioMark"><b></b><em class="caption-3">Biological</em></div></div>
         </div>
         <div class="ticks caption-5 mono" aria-hidden="true"><span>20</span><span>35</span><span>50</span><span>65</span><span>80</span><span>95</span></div>
       </div>
       <div class="two">
-        <div class="tile rv"><div class="k title-4"><i class="ph ph-trend-down"></i>Helping most</div><div id="best"></div></div>
-        <div class="tile rv"><div class="k title-4"><i class="ph ph-trend-up"></i>Costing most</div><div id="worst"></div></div>
+        <div class="tile rv"><div class="k title-4"><i class="ph ph-trend-down"></i>Protective factors</div><div id="best"></div></div>
+        <div class="tile rv"><div class="k title-4"><i class="ph ph-trend-up"></i>Risk factors</div><div id="worst"></div></div>
       </div>
-      <div class="tile rv"><div class="k title-4"><i class="ph ph-chart-bar-horizontal"></i>Every habit, in years</div><div class="fx" id="bars"></div></div>
+      <div class="tile rv"><div class="k title-4"><i class="ph ph-chart-bar-horizontal"></i>Contribution by factor (years)</div><div class="fx" id="bars"></div></div>
     </div>
   </div>
 </div></section>
 
 <section id="how"><div class="wrap">
-  <div class="shead rv"><h2 class="heading-3">How it works</h2></div>
+  <div class="shead rv"><h2 class="heading-3">Methodology</h2></div>
   <div class="steps">
-    <div class="step rv"><div class="vis"><div class="opt on">Never smoked</div><div class="opt">Quit</div><div class="opt">Smoke now</div></div><div class="txt"><h3 class="title-2">Answer nine questions</h3><p class="body-6 mut">One per screen, each with a slider or a tap. Most people finish in about a minute.</p></div></div>
-    <div class="step rv"><div class="vis"><div class="mini"><span>Sleep</span><span style="background:var(--young);transform:scaleX(.4)"></span></div><div class="mini"><span>Stress</span><span style="background:var(--old);transform:scaleX(.7)"></span></div><div class="mini"><span>Exercise</span><span style="background:var(--young);transform:scaleX(.55)"></span></div></div><div class="txt"><h3 class="title-2">Each habit gets a score</h3><p class="body-6 mut">Every answer lands in a range worth a few years younger or older, using simple rules of thumb.</p></div></div>
-    <div class="step rv"><div class="vis" style="align-items:center"><div class="caption-5 mut">Biological age</div><div class="heading-2 mono">41.5</div><div class="caption-3" style="color:var(--young)">3.5 years younger</div></div><div class="txt"><h3 class="title-2">See where to focus</h3><p class="body-6 mut">The dashboard ranks what helps and what costs you, so the next change is obvious.</p></div></div>
+    <div class="step rv"><div class="vis"><div class="opt on">Never smoked</div><div class="opt">Former smoker</div><div class="opt">Current smoker</div></div><div class="txt"><h3 class="title-2">1. Complete the questionnaire</h3><p class="body-6 mut">Nine questions covering established lifestyle risk factors. Most people finish in about one minute.</p></div></div>
+    <div class="step rv"><div class="vis"><div class="mini"><span>Sleep</span><span style="background:var(--young);transform:scaleX(.4)"></span></div><div class="mini"><span>Stress</span><span style="background:var(--old);transform:scaleX(.7)"></span></div><div class="mini"><span>Activity</span><span style="background:var(--young);transform:scaleX(.55)"></span></div></div><div class="txt"><h3 class="title-2">2. Responses are weighted</h3><p class="body-6 mut">Each response is assigned a value between −2.5 and +6 years. These values are illustrative and have not been clinically validated.</p></div></div>
+    <div class="step rv"><div class="vis" style="align-items:center"><div class="caption-5 mut">Estimated biological age</div><div class="heading-2 mono">41.5</div><div class="caption-3" style="color:var(--young)">3.5 years below chronological age</div></div><div class="txt"><h3 class="title-2">3. Review your results</h3><p class="body-6 mut">Protective and risk factors are ranked by contribution, showing which changes would have the greatest effect.</p></div></div>
   </div>
 </div></section>
 
 <section id="faq"><div class="wrap faq">
-  <div class="shead rv"><h2 class="heading-3">Questions</h2></div>
+  <div class="shead rv"><h2 class="heading-3">Frequently asked questions</h2></div>
   <div class="rv">
-  <details><summary class="title-2">Is this a medical test?<i class="ph ph-plus"></i></summary><p class="body-3">No. It's an estimate built on simple rules of thumb, meant to show which habits matter. Real biological age comes from lab measures like blood markers or DNA methylation clocks.</p></details>
-  <details><summary class="title-2">How is the number worked out?<i class="ph ph-plus"></i></summary><p class="body-3">Each habit falls into a range worth a set number of years, from about two and a half years younger to six years older. The total is added to your calendar age.</p></details>
-  <details><summary class="title-2">Does my data leave my device?<i class="ph ph-plus"></i></summary><p class="body-3">No. Everything runs in your browser. Your last answers are saved only in this browser so the check remembers them next time.</p></details>
-  <details><summary class="title-2">Why does resting heart rate count?<i class="ph ph-plus"></i></summary><p class="body-3">A lower resting heart rate usually reflects better heart fitness. Most phones and watches can measure it, or count your pulse for a minute after sitting quietly.</p></details>
-  <details><summary class="title-2">Why can't the result move further?<i class="ph ph-plus"></i></summary><p class="body-3">The estimate stays within twelve years younger and eighteen years older than your calendar age, since a habit check can't justify a bigger gap.</p></details>
-  <details><summary class="title-2">How do I get a real measurement?<i class="ph ph-plus"></i></summary><p class="body-3">Ask your doctor about routine blood work and fitness tests. Commercial epigenetic age tests exist too, though results vary between providers.</p></details>
+  <details><summary class="title-2">Is this a medical test?<i class="ph ph-plus"></i></summary><p class="body-3">No. This tool provides an illustrative estimate for educational purposes only. Clinical measures of biological age rely on laboratory testing, such as blood biomarkers or DNA methylation analysis.</p></details>
+  <details><summary class="title-2">How is the estimate calculated?<i class="ph ph-plus"></i></summary><p class="body-3">Each response falls within a defined range assigned a value from −2.5 to +6 years. The sum of these values is added to your chronological age.</p></details>
+  <details><summary class="title-2">Is my information stored or shared?<i class="ph ph-plus"></i></summary><p class="body-3">No. All calculations run in your browser. Your most recent responses are retained in this browser's local storage only.</p></details>
+  <details><summary class="title-2">Why is resting heart rate included?<i class="ph ph-plus"></i></summary><p class="body-3">A lower resting heart rate generally indicates better cardiovascular fitness. For most adults, 60 to 100 bpm is considered normal.</p></details>
+  <details><summary class="title-2">Is there a limit to the estimate?<i class="ph ph-plus"></i></summary><p class="body-3">Yes. Results are limited to 12 years below and 18 years above chronological age, as lifestyle data alone cannot support a wider range.</p></details>
+  <details><summary class="title-2">How can I obtain a clinical assessment?<i class="ph ph-plus"></i></summary><p class="body-3">Speak with your family physician about routine blood work and a fitness assessment. Commercial epigenetic tests are available, although results may vary between providers.</p></details>
   </div>
 </div></section>
 
 <section class="final"><div class="wrap">
   <div class="card rv">
-    <h2 class="heading-2 grad">Find out which clock<br>is running faster</h2>
-    <p class="title-2 mut">Free, no signup, and nothing leaves your browser.</p>
-    <div class="ctas"><a class="btn lg button-md" href="#check">Start the check</a><a class="btn soft lg button-md" href="#faq">Read the FAQ</a></div>
+    <h2 class="heading-2 grad">Begin your<br>assessment</h2>
+    <p class="title-2 mut">No cost and no registration. Responses are not transmitted.</p>
+    <div class="ctas"><a class="btn lg button-md" href="#check">Begin assessment</a><a class="btn soft lg button-md" href="#faq">View FAQ</a></div>
   </div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
   <div class="fgrid body-6">
-    <div><a class="brand title-3" href="#top" style="padding:0"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#0A0A0A"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 8.5V12l2.5 1.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Second Clock</a><p class="mut" style="margin-top:12px;max-width:280px">A quick habit check for your body's age. For education only, not medical advice.</p></div>
-    <div><h4 class="title-4">Product</h4><a href="#check">Start the check</a><a href="#results">Your results</a></div>
-    <div><h4 class="title-4">Learn</h4><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
+    <div><a class="brand title-3" href="#top" style="padding:0"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#0A0A0A"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 8.5V12l2.5 1.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Second Clock</a><p class="mut" style="margin-top:12px;max-width:280px">An educational lifestyle assessment. Not a substitute for professional medical advice.</p></div>
+    <div><h4 class="title-4">Assessment</h4><a href="#check">Begin assessment</a><a href="#results">Results</a></div>
+    <div><h4 class="title-4">Information</h4><a href="#how">Methodology</a><a href="#faq">FAQ</a></div>
     <div class="legal"><h4 class="title-4">Legal</h4>
-      <details><summary>Privacy</summary><p class="caption-5 mut">No accounts, no tracking. Answers stay in this browser's local storage.</p></details>
-      <details><summary>Terms</summary><p class="caption-5 mut">General interest only. Speak to a doctor about any health decision.</p></details></div>
+      <details><summary>Privacy</summary><p class="caption-5 mut">No accounts or tracking. Responses are stored in this browser only.</p></details>
+      <details><summary>Terms</summary><p class="caption-5 mut">For general information only. Consult a healthcare professional before making health decisions.</p></details></div>
   </div>
   <p class="copy caption-5">© 2026 Second Clock</p>
 </div></footer>
@@ -342,25 +342,25 @@ let S={...D},cur=0,seen=new Set([0]);
 try{const s=JSON.parse(localStorage.getItem('second-clock')||'null');if(s){S={...D,...s.S};cur=s.cur||0;(s.seen||[]).forEach(i=>seen.add(i))}}catch(e){}
 const $=id=>document.getElementById(id);
 const STRESS=['','Very low','Low','Moderate','High','Very high'];
-const ICON={Age:'cake',Body:'ruler',Smoking:'cigarette',Exercise:'person-simple-run',Sleep:'moon-stars','Body size':'ruler',Alcohol:'wine','Heart rate':'heartbeat','Fruit and veg':'carrot',Stress:'wave-sine'};
+const ICON={Tobacco:'cigarette','Physical activity':'person-simple-run',Sleep:'moon-stars',BMI:'ruler',Alcohol:'wine','Resting heart rate':'heartbeat',Diet:'carrot',Stress:'wave-sine'};
 const Q=[
- {id:'age',chip:'Age',icon:'cake',tint:'var(--calm)',q:'How old are you?',why:'Your calendar age is the starting point. Habits move the estimate from here.',type:'range',min:18,max:90,step:1,u:'years',extra:'sex'},
- {id:'body',chip:'Body',icon:'ruler',tint:'var(--food)',q:'Your height and weight',why:'Used to work out body mass index. Leave blank to skip.',type:'body'},
- {id:'smoke',chip:'Smoking',icon:'cigarette',tint:'var(--heart)',q:'Do you smoke?',why:'The single biggest habit in this check.',type:'choice',opts:[['never','Never smoked'],['former','I quit'],['current','I smoke now']]},
- {id:'ex',chip:'Exercise',icon:'person-simple-run',tint:'var(--move)',q:'Days a week you exercise',why:'Count any day with at least thirty minutes that gets you breathing harder.',type:'range',min:0,max:7,step:1,u:'days'},
- {id:'sl',chip:'Sleep',icon:'moon-stars',tint:'var(--sleep)',q:'Hours of sleep a night',why:'Think of a normal weeknight, not your best night.',type:'range',min:4,max:10,step:.5,u:'hours'},
- {id:'al',chip:'Alcohol',icon:'wine',tint:'var(--heart)',q:'Alcoholic drinks a week',why:'One drink is a regular beer, a small glass of wine or a single shot.',type:'range',min:0,max:25,step:1,u:'drinks'},
- {id:'hr',chip:'Heart rate',icon:'heartbeat',tint:'var(--heart)',q:'Resting heart rate',why:'Check your watch or phone, or count your pulse for a minute while sitting.',type:'range',min:45,max:100,step:1,u:'bpm'},
- {id:'vg',chip:'Fruit and veg',icon:'carrot',tint:'var(--move)',q:'Fruit and veg servings a day',why:'A serving is roughly a handful, or a medium piece of fruit.',type:'range',min:0,max:8,step:1,u:'servings'},
- {id:'st',chip:'Stress',icon:'wave-sine',tint:'var(--calm)',q:'How stressed do you feel most weeks?',why:'Go with your gut. There is no wrong answer.',type:'choice',opts:[[1,'Very low'],[2,'Low'],[3,'Moderate'],[4,'High'],[5,'Very high']]}
+ {id:'age',chip:'Age and sex',icon:'cake',tint:'var(--calm)',q:'What is your age?',why:'Chronological age is the baseline for the estimate.',type:'range',min:18,max:90,step:1,u:'years',extra:'sex'},
+ {id:'body',chip:'Height and weight',icon:'ruler',tint:'var(--food)',q:'What are your height and weight?',why:'Used to calculate body mass index (BMI). Optional.',type:'body'},
+ {id:'smoke',chip:'Tobacco',icon:'cigarette',tint:'var(--heart)',q:'What is your tobacco use?',why:'Tobacco use carries the highest weighting in this assessment.',type:'choice',opts:[['never','Never smoked'],['former','Former smoker'],['current','Current smoker']]},
+ {id:'ex',chip:'Physical activity',icon:'person-simple-run',tint:'var(--move)',q:'On how many days per week do you exercise?',why:'Include days with at least 30 minutes of moderate to vigorous activity.',type:'range',min:0,max:7,step:1,u:'days'},
+ {id:'sl',chip:'Sleep',icon:'moon-stars',tint:'var(--sleep)',q:'How many hours do you sleep per night?',why:'Report the average for a typical weeknight.',type:'range',min:4,max:10,step:.5,u:'hours'},
+ {id:'al',chip:'Alcohol',icon:'wine',tint:'var(--heart)',q:'How many standard drinks do you have per week?',why:'One standard drink is 341 ml of beer (5%), 142 ml of wine (12%) or 43 ml of spirits (40%).',type:'range',min:0,max:25,step:1,u:'drinks'},
+ {id:'hr',chip:'Resting heart rate',icon:'heartbeat',tint:'var(--heart)',q:'What is your resting heart rate?',why:'Measure after five minutes seated, or use a reading from a wearable device.',type:'range',min:45,max:100,step:1,u:'bpm'},
+ {id:'vg',chip:'Diet',icon:'carrot',tint:'var(--move)',q:'How many servings of fruit and vegetables do you eat per day?',why:'One serving is approximately 125 ml (half a cup) of fresh, frozen or canned produce.',type:'range',min:0,max:8,step:1,u:'servings'},
+ {id:'st',chip:'Stress',icon:'wave-sine',tint:'var(--calm)',q:'How would you rate your stress over the past month?',why:'Select the option that best reflects a typical week.',type:'choice',opts:[[1,'Very low'],[2,'Low'],[3,'Moderate'],[4,'High'],[5,'Very high']]}
 ];
 const bmiOf=()=>{let h=+S.ht,w=+S.wt;if(S.unit==='imp'){h*=2.54;w*=.4536}return h>=100&&h<=250&&w>=30&&w<=300?w/((h/100)**2):0};
 const step=(x,t)=>{for(const[l,v]of t)if(x<l)return v;return t[t.length-1][1]};
 const factors=()=>{const b=bmiOf();return[
- ['Smoking',{never:0,former:1.5,current:6}[S.smoke]],['Exercise',step(S.ex,[[1,3],[3,1],[5,-1],[99,-2.5]])],
- ['Sleep',step(S.sl,[[6,2.5],[7,1],[8.5,-1],[99,1]])],['Body size',b?step(b,[[18.5,1],[25,-1],[30,1.5],[35,3.5],[999,5.5]]):0],
- ['Alcohol',step(S.al,[[4,0],[8,.5],[15,2],[999,4]])],['Heart rate',step(S.hr,[[60,-1.5],[70,-.5],[80,.5],[90,2],[999,3.5]])],
- ['Fruit and veg',step(S.vg,[[2,2],[4,.5],[6,-1],[99,-1.5]])],['Stress',[0,-1,-.5,0,1.5,3][S.st]]]};
+ ['Tobacco',{never:0,former:1.5,current:6}[S.smoke]],['Physical activity',step(S.ex,[[1,3],[3,1],[5,-1],[99,-2.5]])],
+ ['Sleep',step(S.sl,[[6,2.5],[7,1],[8.5,-1],[99,1]])],['BMI',b?step(b,[[18.5,1],[25,-1],[30,1.5],[35,3.5],[999,5.5]]):0],
+ ['Alcohol',step(S.al,[[4,0],[8,.5],[15,2],[999,4]])],['Resting heart rate',step(S.hr,[[60,-1.5],[70,-.5],[80,.5],[90,2],[999,3.5]])],
+ ['Diet',step(S.vg,[[2,2],[4,.5],[6,-1],[99,-1.5]])],['Stress',[0,-1,-.5,0,1.5,3][S.st]]]};
 const pct=a=>Math.max(0,Math.min(100,(a-20)/75*100));
 const fmt=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(1);
 const save=()=>{try{localStorage.setItem('second-clock',JSON.stringify({S,cur,seen:[...seen]}))}catch(e){}};
@@ -377,18 +377,18 @@ function stage(dir){
   <div class="ends caption-5 mono"><span>${q.min}</span><span>${q.max}</span></div>`;
   if(q.extra==='sex')h+=`<div class="units" style="margin:24px 0 0" data-k="sex"><button data-v="f" aria-pressed="${S.sex==='f'}">Female</button><button data-v="m" aria-pressed="${S.sex==='m'}">Male</button></div>`}
  if(q.type==='choice')h+=`<div class="opts">${q.opts.map(([v,l])=>`<button class="choice title-3" data-v="${v}" aria-pressed="${String(S[q.id])===String(v)}">${l}<span class="r"></span></button>`).join('')}</div>`;
- if(q.type==='body'){const imp=S.unit==='imp';h+=`<div class="units" data-k="unit"><button data-v="metric" aria-pressed="${!imp}">Centimetres and kg</button><button data-v="imp" aria-pressed="${imp}">Inches and lb</button></div>
+ if(q.type==='body'){const imp=S.unit==='imp';h+=`<div class="units" data-k="unit"><button data-v="metric" aria-pressed="${!imp}">Metric (cm, kg)</button><button data-v="imp" aria-pressed="${imp}">Imperial (in, lb)</button></div>
   <label class="field title-4">Height in ${imp?'inches':'cm'}<input type="number" id="ht" inputmode="decimal" value="${S.ht}"></label>
   <label class="field title-4">Weight in ${imp?'lb':'kg'}<input type="number" id="wt" inputmode="decimal" value="${S.wt}"></label><p class="hint caption-5" id="bmiT"></p>`}
  const last=cur===Q.length-1;
- h+=`<div class="nextrow"><button class="btn button-md" id="next">${last?'See my results':'Continue'}<i class="ph ph-arrow-${last?'down':'right'}"></i></button></div>`;
+ h+=`<div class="nextrow"><button class="btn button-md" id="next">${last?'View results':'Next'}<i class="ph ph-arrow-${last?'down':'right'}"></i></button></div>`;
  el.innerHTML=h;el.className='stage';if(dir&&!reduce){void el.offsetWidth;el.classList.add(dir>0?'enter':'back')}
  $('count').textContent=`${cur+1} of ${Q.length}`;$('progBar').style.transform=`scaleX(${(cur+1)/Q.length})`;$('back').disabled=cur===0;
  bind();chips();bmiHint();save();
 }
 function bmiHint(){const t=$('bmiT');if(!t)return;const b=bmiOf(),filled=S.ht!==''&&S.wt!=='';
  ['ht','wt'].forEach(k=>$(k).setAttribute('aria-invalid',String(filled&&!b)));
- t.className='hint caption-5'+(filled&&!b?' err':'');t.textContent=b?'Body mass index '+b.toFixed(1):filled?'Those numbers look off. Check the units above.':'Add both to include body size, or continue to skip.'}
+ t.className='hint caption-5'+(filled&&!b?' err':'');t.textContent=b?'BMI '+b.toFixed(1)+' kg/m²':filled?'Values are outside the expected range. Check the selected units.':'Enter both values to include BMI, or select Next to skip.'}
 function bind(){const q=Q[cur],r=$('qr');
  if(r){r.oninput=()=>{S[q.id]=+r.value;$('qv').textContent=r.value;render()};
   $('stage').querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{const v=Math.max(q.min,Math.min(q.max,+(S[q.id]+q.step*b.dataset.d).toFixed(1)));S[q.id]=v;r.value=v;$('qv').textContent=v;render()})}
@@ -406,11 +406,11 @@ $('chips').onclick=e=>{const b=e.target.closest('.chip');if(b)go(+b.dataset.i)};
 
 function top3(list,dir){const l=list.filter(x=>dir<0?x[1]<0:x[1]>0).sort((a,b)=>dir<0?a[1]-b[1]:b[1]-a[1]).slice(0,2);
  return l.length?l.map(([n,x])=>`<div class="frow" style="grid-template-columns:minmax(0,1fr) 72px;margin-bottom:4px"><span class="n title-4"><i class="ph ph-${ICON[n]}"></i>${n}</span><span class="v title-4 mono" style="color:${x<0?'var(--young)':'var(--old)'}">${fmt(x)} yr</span></div>`).join('')
-  :`<div class="empty body-6">${dir<0?'Nothing is taking years off yet. Try more sleep or exercise.':'Nothing is adding years. Nice work.'}</div>`}
+  :`<div class="empty body-6">${dir<0?'No protective factors identified from your responses.':'No risk factors identified from your responses.'}</div>`}
 function render(){
  const f=factors(),sum=f.reduce((a,[,v])=>a+v,0),age=+S.age,bio=Math.max(age-12,Math.min(age+18,age+sum)),d=bio-age;
  tween(bio);$('actN').textContent=age;
- const v=$('verdict');v.textContent=Math.abs(d)<.25?'Right on your calendar age':`${Math.abs(d).toFixed(1)} years ${d<0?'younger':'older'}`;
+ const v=$('verdict');v.textContent=Math.abs(d)<.25?'Equal to chronological age':`${Math.abs(d).toFixed(1)} years ${d<0?'below':'above'} chronological age`;
  v.style.color=d<0?'var(--young)':d>0?'var(--old)':'var(--ink)';
  $('mAct').style.transform=`translateX(${pct(age)}%)`;$('mBio').style.transform=`translateX(${pct(bio)}%)`;$('bioMark').classList.toggle('older',d>0);
  $('best').innerHTML=top3(f,-1);$('worst').innerHTML=top3(f,1);
@@ -420,14 +420,14 @@ function render(){
 
 /* marquee screens */
 const SH=[
- ['Question flow','moon-stars','var(--sleep)',`<div class="bar"><div style="transform:scaleX(.55)"></div></div><div class="q">Hours of sleep a night</div><div class="big mono" style="text-align:center;margin-top:16px">7.5</div><div class="fslider"><b style="left:58%"></b></div><div class="fakebtn">Continue</div>`],
- ['Your result','clock','var(--calm)',`<div class="caption-5 mut">Biological age</div><div class="big mono">41.5</div><div class="caption-3" style="color:var(--young)">3.5 years younger</div><div class="fslider" style="margin-top:32px"><b style="left:30%;border-color:var(--young)"></b></div><div class="mini" style="margin-top:auto"><span>Exercise</span><span style="background:var(--young);transform:scaleX(.6)"></span></div><div class="mini"><span>Sleep</span><span style="background:var(--young);transform:scaleX(.35)"></span></div>`],
- ['Single choice','cigarette','var(--heart)',`<div class="bar"><div style="transform:scaleX(.33)"></div></div><div class="q">Do you smoke?</div><div class="opt on">Never smoked</div><div class="opt">I quit</div><div class="opt">I smoke now</div><div class="fakebtn">Continue</div>`],
- ['Habit breakdown','chart-bar-horizontal','var(--move)',`<div class="q">Every habit</div>${[['Smoking',0,.02],['Exercise',1,.5],['Sleep',1,.3],['Alcohol',0,.4],['Stress',0,.7],['Veg',1,.25]].map(([n,g,s])=>`<div class="mini"><span>${n}</span><span style="background:var(--${g?'young':'old'});transform:scaleX(${s})"></span></div>`).join('')}`],
- ['Number stepper','heartbeat','var(--heart)',`<div class="bar"><div style="transform:scaleX(.77)"></div></div><div class="q">Resting heart rate</div><div class="big mono" style="text-align:center;margin-top:16px">62</div><div class="caption-5 mut" style="text-align:center">bpm</div><div class="fslider"><b style="left:30%"></b></div><div class="fakebtn">Continue</div>`],
- ['Gentle check in','wave-sine','var(--calm)',`<div class="bar"><div style="transform:scaleX(1)"></div></div><div class="q">How stressed do you feel?</div><div class="opt">Low</div><div class="opt on">Moderate</div><div class="opt">High</div><div class="fakebtn">See my results</div>`],
- ['Helping most','trend-down','var(--move)',`<div class="caption-5 mut">Helping most</div><div class="opt" style="display:flex;justify-content:space-between">Exercise<span class="mono" style="color:var(--young)">−2.5</span></div><div class="opt" style="display:flex;justify-content:space-between">Heart rate<span class="mono" style="color:var(--young)">−1.5</span></div><div class="caption-5 mut" style="margin-top:12px">Costing most</div><div class="opt" style="display:flex;justify-content:space-between">Stress<span class="mono" style="color:var(--old)">+1.5</span></div>`],
- ['Body details','ruler','var(--food)',`<div class="bar"><div style="transform:scaleX(.22)"></div></div><div class="q">Height and weight</div><div class="opt">172 cm</div><div class="opt">68 kg</div><div class="caption-5 mut">Body mass index 23.0</div><div class="fakebtn">Continue</div>`]
+ ['Sleep','moon-stars','var(--sleep)',`<div class="bar"><div style="transform:scaleX(.55)"></div></div><div class="q">Hours of sleep per night</div><div class="big mono" style="text-align:center;margin-top:16px">7.5</div><div class="fslider"><b style="left:58%"></b></div><div class="fakebtn">Next</div>`],
+ ['Results summary','clock','var(--calm)',`<div class="caption-5 mut">Estimated biological age</div><div class="big mono">41.5</div><div class="caption-3" style="color:var(--young)">3.5 years below chronological age</div><div class="fslider" style="margin-top:32px"><b style="left:30%;border-color:var(--young)"></b></div><div class="mini" style="margin-top:auto"><span>Activity</span><span style="background:var(--young);transform:scaleX(.6)"></span></div><div class="mini"><span>Sleep</span><span style="background:var(--young);transform:scaleX(.35)"></span></div>`],
+ ['Tobacco use','cigarette','var(--heart)',`<div class="bar"><div style="transform:scaleX(.33)"></div></div><div class="q">Tobacco use</div><div class="opt on">Never smoked</div><div class="opt">Former smoker</div><div class="opt">Current smoker</div><div class="fakebtn">Next</div>`],
+ ['Factor breakdown','chart-bar-horizontal','var(--move)',`<div class="q">Contribution by factor</div>${[['Tobacco',0,.02],['Activity',1,.5],['Sleep',1,.3],['Alcohol',0,.4],['Stress',0,.7],['Diet',1,.25]].map(([n,g,s])=>`<div class="mini"><span>${n}</span><span style="background:var(--${g?'young':'old'});transform:scaleX(${s})"></span></div>`).join('')}`],
+ ['Resting heart rate','heartbeat','var(--heart)',`<div class="bar"><div style="transform:scaleX(.77)"></div></div><div class="q">Resting heart rate</div><div class="big mono" style="text-align:center;margin-top:16px">62</div><div class="caption-5 mut" style="text-align:center">bpm</div><div class="fslider"><b style="left:30%"></b></div><div class="fakebtn">Next</div>`],
+ ['Stress','wave-sine','var(--calm)',`<div class="bar"><div style="transform:scaleX(1)"></div></div><div class="q">Stress over the past month</div><div class="opt">Low</div><div class="opt on">Moderate</div><div class="opt">High</div><div class="fakebtn">View results</div>`],
+ ['Protective factors','trend-down','var(--move)',`<div class="caption-5 mut">Protective factors</div><div class="opt" style="display:flex;justify-content:space-between">Activity<span class="mono" style="color:var(--young)">−2.5</span></div><div class="opt" style="display:flex;justify-content:space-between">Resting HR<span class="mono" style="color:var(--young)">−1.5</span></div><div class="caption-5 mut" style="margin-top:12px">Risk factors</div><div class="opt" style="display:flex;justify-content:space-between">Stress<span class="mono" style="color:var(--old)">+1.5</span></div>`],
+ ['Body measurements','ruler','var(--food)',`<div class="bar"><div style="transform:scaleX(.22)"></div></div><div class="q">Height and weight</div><div class="opt">172 cm</div><div class="opt">68 kg</div><div class="caption-5 mut">BMI 23.0 kg/m²</div><div class="fakebtn">Next</div>`]
 ];
 const card=([l,ic,t,inner])=>`<div class="shot"><div class="phone"><div class="scr">${inner}</div></div><div class="lbl title-4"><i class="ph ph-${ic}" style="background:${t}"></i>${l}</div></div>`;
 const a=SH.slice(0,4).concat(SH.slice(4)),b=SH.slice(4).concat(SH.slice(0,4)).reverse();

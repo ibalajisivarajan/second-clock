@@ -1,6 +1,6 @@
 # Second Clock
 
-A quick biological age check. Answer nine questions about sleep, movement, food, drinking, smoking, stress, body size and resting heart rate, and see how many years your habits add or take off.
+An educational lifestyle assessment that estimates biological age from nine questions covering sleep, physical activity, diet, alcohol, tobacco, stress, BMI and resting heart rate.
 
 Live: https://ibalajisivarajan.github.io/second-clock/
 
